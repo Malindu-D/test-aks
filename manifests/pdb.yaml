@@ -1,0 +1,13 @@
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: test-aks-contoso-air
+  labels:
+    app.kubernetes.io/name: test-aks-contoso-air
+    app.kubernetes.io/part-of: test-aks-contoso-air-project
+    kubernetes.azure.com/generator: devhub
+spec:
+  maxUnavailable: 1
+  selector:
+    matchLabels:
+      app: test-aks-contoso-air

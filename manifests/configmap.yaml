@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: test-aks-contoso-air-config
+  namespace: testaksairnamespace
+  labels:
+    app.kubernetes.io/name: test-aks-contoso-air
+    kubernetes.azure.com/generator: devhub
+data:
