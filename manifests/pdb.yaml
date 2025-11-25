@@ -10,4 +10,4 @@ spec:
   maxUnavailable: 1
   selector:
     matchLabels:
-      app: test-aks-contoso-air
+      app.kubernetes.io/name: test-aks-contoso-air

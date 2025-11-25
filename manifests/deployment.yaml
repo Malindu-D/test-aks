@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: test-aks-contoso-air
-          image: TestAksAir.azurecr.io/testcontosoair:latest
+          image: TestAksAir.azurecr.io/testcontosoair:1.0
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
