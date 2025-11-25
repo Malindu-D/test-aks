@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: test-aks-contoso-air
+  namespace: testaksairnamespace
+  labels:
+    app.kubernetes.io/name: test-aks-contoso-air
+    kubernetes.azure.com/generator: devhub
+spec:
+  type: LoadBalancer
+  selector:
+    app.kubernetes.io/name: test-aks-contoso-air
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
